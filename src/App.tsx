@@ -7,7 +7,8 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
+      <Header />
+      <NewTask />
     </div>
   )
 }
