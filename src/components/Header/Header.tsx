@@ -1,9 +1,8 @@
-import styles from "./Header.module.css"
-import todoLogo from "../../assets/logo.svg"
+import { Logo } from "../Logo";
 function Header() {
     return (
-        <header className={styles.header}>
-            <img src={todoLogo} alt="logo do ignite" />
+        <header className="bg-gray-700 flex justify-center items-center h-48">
+            <Logo className="h-12 relative" />
         </header >
 
     );
