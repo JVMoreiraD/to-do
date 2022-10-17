@@ -12,7 +12,7 @@ function App() {
       <Header />
       <TextInput.button>
         <TextInput.root>
-          <TextInput.input placeholder='Crie um nova tarefa'></TextInput.input>
+          <TextInput.input placeholder='Adicione uma nova tarefa'></TextInput.input>
         </TextInput.root>
         <Button>Criar <PlusCircle size={20} /></Button>
       </TextInput.button>

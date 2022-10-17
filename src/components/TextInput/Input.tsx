@@ -39,7 +39,7 @@ function TextInputIcon({ children }: ITextInputIconProps) {
 
 function TextInputInput(props: ITextInputInputProps) {
     return (
-        <input className='bg-gray-500 flex-1 text-gray-400 text-md placeholder:text-gray-400 font-bold outline-none'
+        <input className='bg-gray-500 flex-1 text-gray-100 text-md placeholder:text-gray-300 font-bold outline-none'
             {...props}
         />
 
