@@ -2,7 +2,7 @@ import { ClipboardText } from "phosphor-react";
 import { Text } from "../Text/Text";
 export function PageContent() {
     return (
-        <div className="max-w-[46rem] mt-16 left-10 m-0 mr-auto ml-auto">
+        <div className="max-w-[46rem] mt-16 m-0 mr-auto ml-auto">
             <header className="flex justify-between">
                 <Text asChild size="md" className="text-blue-normal font-bold flex items-center gap-2">
                     <p>

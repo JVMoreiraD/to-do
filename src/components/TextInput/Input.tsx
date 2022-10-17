@@ -15,7 +15,7 @@ export interface ITextInputIconProps {
 export function TextInputRoot({ children }: ITextInputRootProps) {
     return (
         <div
-            className="flex items-center  gap-2 h-14 w-[46rem] py-4 px-4 rounded bg-gray-500 focus-within:ring-2 ring-purple-dark"
+            className="flex items-center h-14 w-[46rem] py-4 px-4 rounded bg-gray-500 focus-within:ring-2 ring-purple-dark"
         >
             {children}
         </div>
@@ -24,7 +24,7 @@ export function TextInputRoot({ children }: ITextInputRootProps) {
 export function TextInputWrapperButton({ children }: ITextInputRootProps) {
     return (
         <div
-            className="gap-2 flex mr-auto ml-auto top-40 items-center left-[32rem] p-0 absolute"
+            className="flex gap-2 -mt-7 m-0 mr-auto ml-auto max-w-[46rem]"
         >
             {children}
         </div>
