@@ -1,15 +1,22 @@
-import './App.module.css'
-import './global.css'
+import './styles/global.css'
 import { Header } from './components/Header/Header'
-import { NewTask } from './components/NewTask/NewTask'
+import { TextInput } from './components/TextInput/Input'
 import { PageContent } from './components/PageContent/PageContent'
+import { Button } from './components/Button/Button'
+import { PlusCircle } from 'phosphor-react'
 
 function App() {
 
   return (
-    <div>
+    <div className='w-screen h-screen bg-gray-600'>
       <Header />
-      <NewTask />
+      <TextInput.button>
+        <TextInput.root>
+          <TextInput.input placeholder='Crie um nova tarefa'></TextInput.input>
+        </TextInput.root>
+        <Button>Criar <PlusCircle size={20} /></Button>
+      </TextInput.button>
+
       <PageContent />
     </div>
   )
