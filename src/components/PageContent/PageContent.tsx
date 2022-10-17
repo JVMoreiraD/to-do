@@ -1,4 +1,5 @@
 import { ClipboardText } from "phosphor-react";
+import { Task } from "../Task/Task";
 import { Text } from "../Text/Text";
 export function PageContent() {
     return (
@@ -17,7 +18,7 @@ export function PageContent() {
                     </p>
                 </Text>
             </header>
-            <div className="flex flex-col mt-6 rounded-lg border-t-2 border-t-gray-400 text-gray-300 text-center items-center p-16">
+            {/* <div className="flex flex-col mt-6 rounded-lg border-t-2 border-t-gray-400 text-gray-300 text-center items-center p-16">
                 <ClipboardText size={56} />
                 <Text size="lg" className="font-bold text-gray-300 mt-4">
                     Você ainda não tem tarefas cadastradas
@@ -25,6 +26,9 @@ export function PageContent() {
                 <Text size="lg" className="text-gray-300">
                     Crie tarefas e organize seus itens a fazer
                 </Text>
+            </div> */}
+            <div className="flex flex-col mt-6 gap-3">
+                <Task textContent="Ola mundo" />
             </div>
         </div>
     )
