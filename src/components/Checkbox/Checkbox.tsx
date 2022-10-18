@@ -6,8 +6,7 @@ export interface ICheckBoxProps extends CheckboxRadix.CheckboxProps {
 export function CheckBox(props: ICheckBoxProps) {
     return (
         <CheckboxRadix.Root
-            // className="w-4 h-4 bg-gray-800 rounded-full ring-2 ring-blue-normal hover:bg-blue-dark hover:ring-blue-dark hover:bg-opacity-25 "
-            className="w-4 h-4 bg-gray-800 rounded-full ring-2 ring-blue-normal hover:bg-blue-dark hover:ring-blue-dark hover:bg-opacity-25 checked:bg-purple-dark checked:ring-offset-purple-dark"
+            className="w-4 h-4 bg-gray-800 rounded-full ring-2 ring-blue-normal hover:bg-blue-dark hover:ring-blue-dark hover:bg-opacity-25"
             {...props}
         >
             <CheckboxRadix.CheckboxIndicator asChild>
