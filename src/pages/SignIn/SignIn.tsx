@@ -37,10 +37,6 @@ export function SignIn() {
                         <TextInput.input id='password' placeholder='*******' type={'password'} />
                     </TextInput.root>
                 </label>
-                <label htmlFor='remember' className='flex gap-2'>
-                    <CheckBox id='remember'></CheckBox>
-                    <Text size='sm' className='text-gray-200'>Lembrar por 30 dias</Text>
-                </label>
 
                 <Button type='submit' className='mt-4 w-1/3 py-3 px-4'>
                     Logar
