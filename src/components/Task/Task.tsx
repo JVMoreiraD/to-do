@@ -25,9 +25,9 @@ export function Task({ textContent, onDeleteTask, onCheckTask, taskId }: ITaskPr
                     <CheckBox id={taskId} onCheckedChange={handleCheckTask} />
                 </div>
                 <Text className={
-                    isTaskChecked ? "text-gray-300 line-through cursor-pointer" : ""
+                    isTaskChecked ? "text-gray-300 line-through cursor-pointer text-justify" : ""
                 }>
-                    <label className="cursor-pointer" htmlFor={taskId}>
+                    <label className="cursor-pointer text-justify" htmlFor={taskId}>
                         {textContent}
                     </label>
                 </Text>
