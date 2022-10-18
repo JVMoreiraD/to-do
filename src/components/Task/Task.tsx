@@ -22,12 +22,12 @@ export function Task({ textContent, onDeleteTask, onCheckTask, taskId }: ITaskPr
         <div className="flex items-start justify-between bg-gray-500 border-solid border-gray-400 rounded-lg ">
             <div className="flex gap-3 p-4">
                 <div>
-                    <CheckBox onCheckedChange={handleCheckTask} />
+                    <CheckBox id={taskId} onCheckedChange={handleCheckTask} />
                 </div>
                 <Text className={
-                    isTaskChecked ? "text-gray-300 line-through" : ""
+                    isTaskChecked ? "text-gray-300 line-through cursor-pointer" : ""
                 }>
-                    <label>
+                    <label className="cursor-pointer" htmlFor={taskId}>
                         {textContent}
                     </label>
                 </Text>
@@ -35,7 +35,7 @@ export function Task({ textContent, onDeleteTask, onCheckTask, taskId }: ITaskPr
             <button className="flex mt-4 mr-4" onClick={() => onDeleteTask(taskId)}>
                 <Trash size={20} className="text-gray-300 hover:text-danger"></Trash>
             </button>
-        </div>
+        </div >
 
     )
 }

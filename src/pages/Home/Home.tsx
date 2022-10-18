@@ -46,7 +46,7 @@ export function Home() {
     }
 
     return (
-        <div className='w-screen min-h-screen bg-gray-600'>
+        <div className='w-full min-h-screen bg-gray-600'>
             <Header />
             <TextInput.button>
                 <TextInput.root>
