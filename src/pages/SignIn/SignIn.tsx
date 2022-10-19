@@ -4,7 +4,15 @@ import { Button } from "../../components/Button/Button";
 import { Logo } from "../../components/Logo";
 import { Text } from "../../components/Text/Text";
 import { TextInput } from "../../components/TextInput/Input";
+
+import { Routes, Route, useNavigate } from 'react-router-dom';
+
 export function SignIn() {
+    const navigate = useNavigate();
+    const navigateHome = () => {
+        // 👇️ navigate to /
+        navigate('/home');
+    };
     return (
         <div className='w-screen h-screen bg-gray-600 flex flex-col items-center justify-center '>
             <header className='flex flex-col items-center'>
@@ -37,7 +45,7 @@ export function SignIn() {
                     </TextInput.root>
                 </label>
 
-                <Button type='submit' className='mt-4 w-1/3 py-3 px-4'>
+                <Button type='submit' onClick={navigateHome} className='mt-4 w-1/3 py-3 px-4'>
                     Logar
                 </Button>
             </form>
