@@ -10,7 +10,7 @@ export function AppRoutes() {
             <Route path="/home" element={<Home />} />
             <Route path="/signIn" element={<SignIn />} />
             <Route path="/signUp" element={<SignUp />} />
-            <Route path="*" element={<Navigate to="/home" />} />
+            <Route path="*" element={<Navigate to="/signIn" />} />
         </Routes>
     )
 }
