@@ -1,7 +1,6 @@
 import { Envelope, Lock } from "phosphor-react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/Button/Button";
-import { CheckBox } from "../../components/Checkbox/Checkbox";
 import { Logo } from "../../components/Logo";
 import { Text } from "../../components/Text/Text";
 import { TextInput } from "../../components/TextInput/Input";
