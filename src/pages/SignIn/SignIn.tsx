@@ -55,7 +55,7 @@ export function SignIn() {
                     <a className='text-gray-300 underline hover:text-gray-200 cursor-pointer '>Esqueceu a senha ?</a>
                 </Text>
                 <Text asChild size='sm'>
-                    <Link to={'/SignUp'} className='text-gray-300 underline hover:text-gray-200 cursor-pointer '>Não possui conta ? Crie agora!</Link>
+                    <Link to={'/signUp'} className='text-gray-300 underline hover:text-gray-200 cursor-pointer '>Não possui conta ? Crie agora!</Link>
                 </Text>
             </footer>
         </div>

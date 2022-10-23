@@ -1,4 +1,4 @@
-import { Envelope, Lock } from "phosphor-react";
+import { Envelope, Lock, User } from "phosphor-react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/Button/Button";
 import { CheckBox } from "../../components/Checkbox/Checkbox";
@@ -15,6 +15,17 @@ export function SignUp() {
                 </Text>
             </header>
             <form className='flex flex-col items-center w-full mt-10 gap-4'>
+                <label htmlFor='name' className='flex flex-col gap-3'>
+                    <Text className='font-semibold'>
+                        Nome:
+                    </Text>
+                    <TextInput.root>
+                        <TextInput.icon>
+                            <User />
+                        </TextInput.icon>
+                        <TextInput.input id='name' placeholder='Digite seu nome' type={'text'} />
+                    </TextInput.root>
+                </label>
                 <label htmlFor='email' className='flex flex-col gap-3'>
                     <Text className='font-semibold'>
                         Endereço de Email:
@@ -54,7 +65,7 @@ export function SignUp() {
             </form>
             <footer className='flex flex-col items-center gap-4 mt-8'>
                 <Text asChild size='sm'>
-                    <Link to={'/SignIn'} className='text-gray-300 underline hover:text-gray-200 cursor-pointer '>Não possui conta ? Crie agora!</Link>
+                    <Link to={'/signIn'} className='text-gray-300 underline hover:text-gray-200 cursor-pointer '>Não possui conta ? Crie agora!</Link>
                 </Text>
             </footer>
         </div>
